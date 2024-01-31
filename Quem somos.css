@@ -1,0 +1,145 @@
+*{
+	margin:0px;
+padding:0px;
+}
+
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF; 
+	font-size:12px; 
+	background-color:#1E90FF; 
+}
+
+
+.cabecalho{
+	width:980px;        
+	height:262px;   
+	margin:auto;     
+}
+
+.logo{
+	padding-top:0px;
+	width:490px;
+	height:220px;
+	float:left;    
+}
+
+
+
+.banner {
+	padding-top:40px; 
+    width:490px;
+	height:220px;
+	float:left;
+}
+
+.menu {
+	margin-left:0px;
+	margin-right:0px;
+	width:980px;
+	height:25px;
+	padding-top:10px; 
+	padding-bottom:5px; 
+	background-repeat:no-repeat; 
+	float:left;
+}
+.menu a{  
+	text-decoration:none;  
+	font-size:16px;
+	padding-left:15px;
+	color:#000;
+}
+
+
+
+
+
+.conteudo { 
+	width:980px;
+	height:520px;
+	background-color:#CCC;
+	color:#000;
+	margin:auto;
+	border-style:double;
+	padding-top:0px;
+	display:inline-box;
+}
+.conteudo h1{
+	color:#008;
+	padding-left:400px;
+	padding-top:10px;
+}
+.conteudo p{
+	padding-left:15px;
+	padding-top:10px;
+}
+.instituição{
+padding-top:20px;	
+padding-left:40px;
+color:#008;
+}
+
+.instituição ol{
+font-size:130%;
+color:#008;
+list-style-type:square;
+padding-bottom:20px;
+}
+.endereço{
+color:#008;
+}
+.endereço ol{
+font-size:130%;
+color:#008;
+padding-bottom:20px;
+list-style-type:square;
+}
+.curso{
+color:#008;
+}
+.curso ol{
+font-size:130%;
+color:#000;
+padding-bottom:20px;
+list-style-type:square;
+color:#008;
+}
+.integrantes{
+color:#008;	
+}
+.integrantes ol{
+font-size:130%;
+padding-bottom:30px;
+list-style-type:decimal;
+color:#008;
+}
+.mapa{
+float:right;
+padding-right:40px;
+padding-top:20px;
+color:#008;
+
+}
+
+
+a:hover{
+	font-size:200%;
+	color:#ff7f00;
+}
+
+ul{
+	margin:0;
+	padding-top:10px;
+	padding-left:25px;
+	list-style:none;
+	width:150px;
+}
+
+.rodape{
+	width:965px;
+	height:28px;
+	padding-top:20px;
+	padding-left:0px;
+	color:#000;	
+}

@@ -1,0 +1,106 @@
+<html>
+
+<head>
+<title>English</title>
+
+<link href="Inglês.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body onload="doWave(0)">
+
+<div class="cabecalho" >
+
+  				<div class="logo" >                
+                
+                    <img src="the-internet-of-the-things.png" width="980" height="220">
+                
+                </div>
+                <div class="banner" >
+                
+                     
+                
+                </div>
+                              
+                <div class="menu" >
+                
+               <a href="Internet das Coisas.html">Internet of Things</a> 
+                <a href="Quem somos.html">Who we are</a> 
+                <a href="Contato.html">Contact</a>  
+                <a href="Inglês.html" >English</a> 
+                <a href="Index.html" >Back to Index</a>
+                
+                </div>
+                
+</div>
+
+<div class="conteudo">
+    
+
+    
+
+
+					<div class="texto" >
+                        <h1>English</h1>
+                    </div>
+<div class="script">
+<script language="JavaScript">
+function nextSize(i,incMethod,textLength)
+{
+if (incMethod == 1) { return (22*Math.abs(Math.sin(i/(textLength/3.14))) );
+}
+if (incMethod == 2) { return (255*Math.abs(Math.cos(i/(textLength/3.14))));
+}
+return(0)
+}
+function sizeCycle(text,method,dis)
+{
+var output = "";
+for (i = 0; i < text.length; i++) {
+size = parseInt(nextSize(i +dis,method,text.length));
+output += "<font style='font-size: "+ size +"pt'>" +text.substring(i,i+1)+ "</font>";
+}
+if (document.all)
+theDiv.innerHTML = output;
+else if (document.getElementById){
+rng = document.createRange();
+el = document.getElementById('theDiv');
+rng.setStartBefore(el);
+htmlFrag = rng.createContextualFragment(output);
+while (el.hasChildNodes()) el.removeChild(el.lastChild);
+el.appendChild(htmlFrag);}
+else if (document.layers){
+
+document.theDiv.document.write("<font face='Verdana'point-size=11>"+output+"</font>");
+document.theDiv.document.close();}
+}
+
+function doWave(n) {
+var theText = 'Internet Of Things!';
+
+sizeCycle(theText,1,n);
+if (n > theText.length) {
+n=0
+}
+setTimeout("doWave(" + (n+1) + ")", 50);
+}
+
+</script>
+<div ID="theDiv" align="center"></div>
+</div>
+
+                    <div class="foto">
+                         <img src="bonecopng.gif" width="490" height="500"/>
+                    </div>
+
+                    <div class="video">
+                        <embed = src="I-bike-video.mp4"width="490"height="500">
+                    </div>
+                    
+                    </div>
+                    
+
+<div class="rodape">
+© Copyright desde 2019 Grupo5 Design, todos os direitos reservados 
+</div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+*{margin:0px;
+padding:0px;
+}
+
+body{
+	font-family:Arial, Helvetica, sans-serif; 
+	color:#FFF; 
+	font-size:12px; 
+	background-color:#1E90FF; 
+}
+
+
+.cabecalho{
+	width:980px;        
+	height:262px;     
+	margin:auto;     
+}
+
+.logo{
+	padding-top:0px;
+	width:490px;
+	height:220px;
+	float:left;     
+}
+
+.banner {
+	padding-top:0px; 
+    width:490px;
+	height:220px;
+	float:left;
+}
+
+.menu {
+	margin-left:0px;
+	margin-right:0px;
+	width:980px;
+	height:25px;
+	padding-top:10px; 
+	padding-bottom:5px; 
+	background-repeat:no-repeat; 
+	float:left;
+}
+.menu a{ 
+	text-decoration:none;  
+	font-size:16px;
+	padding-left:15px;
+	color:#000;
+}
+
+.conteudo { 
+	width:980px;
+	height:500px;
+	background-color:#CCC;
+	color:#000;
+	margin:auto;
+	border-style:double;
+	padding-top:0px;
+}
+
+.conteudo h1{
+	color:#008;
+	padding-left:400px;
+	padding-top:10px;
+}
+.conteudo p{
+	padding-left:15px;
+	padding-top:10px;
+	
+}
+
+.grupo5{
+	padding-top:40px;
+	padding-left:30px;
+	padding-bottom:0px;
+}
+
+.grupo5 h2{
+	padding-left:0px;
+	color:#008;
+}
+
+.grupo5 ol{
+	font-size:130%;
+	color:#000;
+	padding-bottom:20px;
+	list-style-type:square;
+	color:#008;
+}
+
+
+.integrantes{
+	padding-top:30px;
+	padding-left:30px;
+	padding-bottom:0px;
+}
+.integrantes ol{
+	font-size:130%;
+	color:#000;
+	padding-bottom:20px;
+	color:#008;
+}
+.integrantes h2{
+	padding-top:20px;
+	padding-left:0px;
+	color:#008;
+}
+
+.texto{
+	width:650px;
+	height:auto; 
+	float:left;
+}
+
+.texto h1{
+
+}
+
+.foto{
+	width:100px;
+	height:auto;
+	float:left;
+}
+
+.divmsg{
+	padding-left:30px;
+	padding-bottom:10px;
+	padding-top:0px;
+}
+	
+.divmsg h2{
+	padding-left:30px;
+	color:#008;
+}
+
+.script{
+	padding-left:20px;
+	padding-bottom:20px;
+	padding-top:30px;
+	color:#008;
+}
+.script h2{
+	color:#008;
+	padding-bottom:0px;
+	padding-top:60px;
+	padding-left:10px;
+}
+.input{
+	padding-left:14px;
+}
+
+.label{
+	padding-left:10px;
+	padding-top:20px;
+}
+
+.label h2{
+	color:#008;
+	padding-left:20px;
+	padding-top:0px;
+
+}
+
+.foto img{
+	padding-top:88px; 
+}
+
+.rodape{
+	width:965px;
+	height:28px;
+	background-image:url(../img/bg-rodape.jpg);
+	padding-top:0px;
+	padding-left:185px;
+	color:#000;
+	text-align:left;
+}
+
+a:hover{
+	font-size:200%;
+	color:#ff7f00;
+}
+
+ul{
+	margin:0;
+	padding-top:10px;
+	padding-left:25px;
+	list-style:none;
+	width:150px;
+}

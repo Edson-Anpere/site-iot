@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    
+
+<title>Contato</title>
+
+<link href="Contato.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+
+<div class="cabecalho" >
+
+  				<div class="logo" >                
+                
+                   <img src="a-internet-das-coisas.png" width="980" height="220">
+                
+                </div>
+                <div class="banner" >
+                </div>
+                              
+                <div class="menu" >
+                
+                <a href="Internet das Coisas.html">Internet das Coisas</a> 
+                <a href="Quem somos.html">Quem Somos</a> 
+                <a href="Contato.html">Contato</a>  
+                <a href="Inglês.html" >Inglês</a> 
+                <a href="Index.html" >Voltar para Index</a>
+                
+                </div>
+</div>
+
+<div class="conteudo">
+    <div class="texto" >
+        <h1>Contato</h1>
+    </div>
+
+
+        <div class="script">
+                    <h2>Cadastre-se preenchendo o formulário abaixo</h2>
+                    <script>
+            function testar(){
+                var a = document.getElementById("txtnome").value;
+                var b = document.getElementById("txtidade").value;
+                var c = document.getElementById("txtemail").value;
+                    document.getElementById("txtnome").style.backgroundColor='#ffffff';
+                if(a==""){
+                    window.alert("digite o nome");
+                    document.getElementById("txtnome").focus();
+                    document.getElementById("txtnome").style.backgroundColor='#ff0000';
+                    return false;
+                }   
+                else if(b==""){
+                    window.alert("digite a idade");
+                    document.getElementById("txtidade").focus();
+                    document.getElementById("txtidade").style.backgroundColor='#ff0000'
+                    return false;
+                }
+                else if(isNaN(b)){
+                    window.alert("digite apenas números");
+                    document.getElementById("txtidade").focus();
+                    document.getElementById("txtidade").value="";
+                    document.getElementById("txtidade").style.backgroundColor='#ff0000';
+                    return false;
+                }
+                
+                else if(c==""){
+                    window.alert("digite o email");
+                    document.getElementById("txtemail").focus();
+                    document.getElementById("txtemail").style.backgroundColor='#ff0000';
+                    return false;
+                }
+                else if(c.indexOf("@")==-1){
+                    window.alert("email inválido");
+                    document.getElementById("txtemail").focus();
+                    document.getElementById("txtemail").value="";
+                    document.getElementById("txtemail").style.backgroundColor='#ff0000';
+                    return false;
+                }
+                else{
+                    window.alert("cadastro ok retornando para página inicial");
+                    return true;
+                }
+            }
+            </script>
+            <form id="frmclient" action="index.html" onSubmit="return testar()">
+            <p>Nome:<input type="text" id="txtnome"/></p>
+            <p>Idade:<input type="text" id="txtidade"/></p>
+            <p>Email:<input type="text" id="txtemail"/></p>
+            <div class="input">
+            <input type="reset" value="limpar"/>
+            <input type="submit" value="enviar"/>
+            </div>
+            </form>
+        </div>
+        <div class="label">
+                <h2>Nos envie uma mensagem de até 200 caracteres</h2>
+        </div>
+                
+        <div class="divmsg">
+                <script>
+                    function contaCaracteres(campo_passado){
+                    var limite = 200;
+                    var campo = campo_passado.value.length;
+                    var maxlength = document.getElementById("txtarea").setAttribute("maxlength", limite);
+                    var divmsg = document.getElementById("divmsg");
+                    var restante = limite - campo;
+                    divmsg.innerHTML = campo + "/" + limite;
+                    }
+                </script>
+                <form>
+                    <textarea id="txtarea" name="txtarea" cols="50" rows="10" onkeydown="contaCaracteres(this)" onkeyup="contaCaracteres(txtarea)"></textarea><br>
+                    <input type="reset" value="limpar"/>
+                    <input type="submit" value="enviar"/>
+                </form>
+        </div>
+</div>
+            
+                     <div class="foto" >
+                     
+                     </div> 
+                   
+
+                    
+                    
+                    
+
+
+
+
+
+<div class="rodape">
+© Copyright desde 2019 Grupo5 Design, todos os direitos reservados 
+</div><!-- Fim rodape -->
+</body>
+</html>
